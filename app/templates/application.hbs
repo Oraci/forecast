@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="city">
+		{{input enter="searchWeather" value=city class="input-city" type="text" placeholder="City"}}
+		<button class="btn" {{action "searchWeather" city}}>Search</button>		
+	</div>
+	<div>
+		{{#if loading}}
+			<div class="loading">Loading...</div>
+		{{else}}	
+			<div>
+				{{#if today}}
+					<Today @today={{today}}/>
+				{{/if}}
+
+				{{#if forecast}}
+					<Forecast @forecast={{forecast}}/>
+				{{/if}}
+			</div>
+		{{/if}}
+	</div>
+</div>

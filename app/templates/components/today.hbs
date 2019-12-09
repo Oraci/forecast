@@ -1,0 +1,43 @@
+<div class="today-forecast">
+  <div class="main-row">
+    <div class="date">
+      {{currentCity}}
+    </div>
+    <div class="date">
+      {{date today.dt}}
+    </div>
+    <div class="temp-row">
+      <div class="temperature">
+        {{temperature today.temp.day}}
+      </div>
+      <div class="weather-icon">
+        <i class="wi {{weather-icon today.weather.0.main}}"></i>
+      </div>
+    </div>
+    <div class="current-city">
+      {{currentCity}}
+    </div>
+    <div class="main-info">
+      {{today.weather.0.main}}
+    </div>
+    <div class="additional-row">
+      <div class="rain">
+        <i class="wi wi-umbrella"></i> {{today.rain}}%
+      </div>
+      <div class="speed">
+        <i class="wi wi-strong-wind"></i> {{today.speed}} km/h
+      </div>
+      <div class="cloudy">
+        <i class="wi wi-cloud"></i> {{today.clouds}} %
+      </div>
+    </div>
+    <div class="additional-row">
+      <div class="humidity">
+        <i class="wi wi-humidity"></i> {{today.humidity}} %
+      </div>
+      <div class="pressure">
+        <i class="wi wi-barometer"></i> {{today.pressure}} %
+      </div>
+    </div>
+  </div>
+</div>

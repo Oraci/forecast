@@ -1,0 +1,21 @@
+<div class="forecast">
+  {{#each forecast as |day|}}
+  <div class="day {{day.weather.0.main}}">
+    <div class="date">
+      {{date day.dt}}
+    </div>
+    <div class="weather-icon">
+      <i class="wi {{weather-icon day.weather.0.main}}"></i>
+    </div>
+    <div class="temperature">
+      {{temperature day.temp.day}}
+    </div>
+    <div class="main-info">
+      {{day.weather.0.main}}
+    </div>
+    <div class="clouds">
+      <i class="wi wi-cloud"></i> {{day.clouds}} %
+    </div>
+  </div>
+  {{/each}}
+</div>	
