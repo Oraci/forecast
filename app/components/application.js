@@ -6,5 +6,6 @@ export default Component.extend({
     this.set('currentCity', undefined);
     this.set('today', undefined);
     this.set('forecast', undefined);
+    this.set('message', undefined);
   },  
 });

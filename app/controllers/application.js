@@ -23,7 +23,8 @@ export default Controller.extend({
                 loading: false,
                 today: undefined,
                 forecast: undefined,
-                currentCity: undefined
+                currentCity: undefined,
+                message: undefined
             });
 
             return;
